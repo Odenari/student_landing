@@ -1,12 +1,25 @@
 @import 'libs/bootstrap-reboot.min';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 @import 'base/fonts';
 @import 'base/variables';
 @import 'blocks/container';
 @import 'blocks/hero';
+@import 'blocks/title';
+@import 'blocks/btns';
 
-* {
-    font-family: 'Hero', 'Fractal', sans-serif;
+*,
+h1,
+h2,
+h3,
+p,
+a,
+a::after,
+a::before,
+a:hover,
+a:focus {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: inherit;
 }

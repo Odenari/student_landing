@@ -1,0 +1,22 @@
+.btn {
+    display: block;
+    width: 135px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 0.865rem;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $text-black-color;
+    background-color: $main-color;
+    transition: all 150ms ease-in-out;
+    &:hover {
+        transform: scale(1.025);
+        letter-spacing: 0.05rem;
+        box-shadow: 4px -4px 0 rgba(255, 255, 255, 0.25);
+    }
+    &:focus {
+        outline: none;
+    }
+}

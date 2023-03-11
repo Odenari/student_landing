@@ -1,6 +1,36 @@
 .hero {
-    color: $text-color;
+    color: $text-white-color;
     min-height: 50rem;
-    padding-top: 12.875remgi;
+    padding-top: 10rem;
     background: url('../img/main_bg.jpg') center center/cover no-repeat;
+    &--wrapper {
+        max-width: 770px;
+        width: 55%;
+    }
+    &--title {
+		
+        letter-spacing: 0.12rem;
+    }
+    &--descr {
+        width: 50%;
+        margin: 1.5em 0 2.5em;
+    }
+    &--btns {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 1.4em;
+        letter-spacing: 0.08rem;
+    }
+    &--btn {
+        margin-right: 2.885rem;
+    }
+    &--link {
+        opacity: 0.45;
+        font-size: 0.9rem;
+        transition: all 0.5s ease;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
 }
