@@ -1,0 +1,12 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import 'base/fonts';
+@import 'base/variables';
+@import 'blocks/container';
+@import 'blocks/hero';
+
+* {
+    font-family: 'Hero', 'Fractal', sans-serif;
+    margin: 0;
+    padding: 0;
+}
