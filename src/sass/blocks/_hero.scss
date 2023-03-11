@@ -6,9 +6,9 @@
     &--wrapper {
         max-width: 770px;
         width: 55%;
+        padding-left: 0.45em;
     }
     &--title {
-		
         letter-spacing: 0.12rem;
     }
     &--descr {
@@ -16,14 +16,14 @@
         margin: 1.5em 0 2.5em;
     }
     &--btns {
+        max-width: 310px;
+        width: 100%;
         display: flex;
-        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 1.2rem;
         align-items: center;
         margin-top: 1.4em;
         letter-spacing: 0.08rem;
-    }
-    &--btn {
-        margin-right: 2.885rem;
     }
     &--link {
         opacity: 0.45;
