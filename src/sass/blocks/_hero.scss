@@ -1,15 +1,14 @@
 .hero {
-    color: $text-white-color;
-    min-height: 50rem;
-    padding-top: 10rem;
-    background: url('../img/main_bg.jpg') center center/cover no-repeat;
+    position: relative;
+    height: 100vh;
+    color: $text-color-alt;
+    min-height: 100vh;
+    padding-top: 14rem;
+    background: url('../img/main_bg.jpg') fixed center/cover no-repeat;
     &--wrapper {
         max-width: 770px;
         width: 55%;
         padding-left: 0.45em;
-    }
-    &--title {
-        letter-spacing: 0.12rem;
     }
     &--descr {
         width: 50%;
@@ -31,6 +30,21 @@
         transition: all 0.5s ease;
         &:hover {
             opacity: 0.8;
+            transform: scale(1.125);
+            letter-spacing: 0.1rem;
+        }
+    }
+    &--title {
+        margin: 0.25em 0;
+        padding-left: 0.12em;
+        position: relative;
+        z-index: 1;
+        &::before {
+            @include before_circle;
+            width: 4rem;
+            height: 4rem;
+            left: 0;
+            top: -0.55rem;
         }
     }
 }

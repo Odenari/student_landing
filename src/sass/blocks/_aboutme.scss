@@ -1,0 +1,58 @@
+.aboutme {
+    height: 720px;
+    // height: 100%;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 6em;
+    &--img {
+        display: block;
+        max-height: 600px;
+        margin-right: 4.125em;
+    }
+    &--title {
+        margin-top: 7px;
+        padding-left: 0.5rem;
+        position: relative;
+
+        &:before {
+            @include before_circle;
+            top: -47%;
+            left: 0;
+        }
+    }
+    &--subtitle-big {
+        margin-top: 1em;
+    }
+    &--text {
+        min-height: 600px;
+    }
+    &--descr {
+        margin-top: 0.5em;
+        font-size: 12px;
+        line-height: 18px;
+        &-big {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+    &--tech-wrapper {
+        margin-top: 2.5rem;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    &--techblock {
+        width: 200px;
+    }
+    &--icon {
+        display: block;
+        width: 25px;
+        margin: 1.25em 1.25em 0 0;
+        position: relative;
+        &:before {
+            @include before_circle;
+            top: 0;
+        }
+    }
+}

@@ -1,12 +1,20 @@
 .title {
     line-height: 3rem;
-    &-fz32 {
-        font-size: 2rem;
+    letter-spacing: 0.08rem;
+    &-fz16 {
+        font-size: 1rem;
+        line-height: 1rem;
     }
     &-fz24 {
         font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+    &-fz32 {
+        font-size: 2rem;
+        line-height: 2rem;
     }
     &-fz48 {
         font-size: 3rem;
+        line-height: 3rem;
     }
 }

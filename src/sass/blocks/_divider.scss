@@ -1,0 +1,9 @@
+.divider {
+    width: 4rem;
+    height: 0.125rem;
+    background-color: $main-color;
+    margin: 0.625rem 0;
+    &-white {
+        background-color: #ffffff;
+    }
+}

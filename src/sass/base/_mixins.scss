@@ -1,0 +1,9 @@
+@mixin before_circle {
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    background-color: $main-color;
+}
