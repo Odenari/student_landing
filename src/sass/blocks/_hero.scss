@@ -1,5 +1,5 @@
 .hero {
-    position: relative;
+    // position: relative;
     height: 100vh;
     color: $text-color-alt;
     min-height: 100vh;
@@ -27,11 +27,13 @@
     &--link {
         opacity: 0.45;
         font-size: 0.9rem;
-        transition: all 0.5s ease;
+        transition: (text-shadow 0.5s, all 0.125s) 0.15s ease-in;
         &:hover {
-            opacity: 0.8;
+            opacity: 1;
             transform: scale(1.125);
             letter-spacing: 0.1rem;
+            color: $main-color;
+            text-shadow: 4px -4px 0 rgba(255, 255, 255, 0.15);
         }
     }
     &--title {
