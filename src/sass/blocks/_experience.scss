@@ -1,0 +1,94 @@
+.experience {
+    margin-top: 126px;
+    &--title,
+    &--subtitle {
+        text-align: center;
+    }
+    &--title {
+        position: relative;
+        &:before {
+            @include before_circle;
+            top: -50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &--subheader {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 300;
+    }
+    &--icon {
+        width: 25px;
+        height: 25px;
+    }
+    &--textWrapper {
+        padding: 0 65px;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &--item {
+        position: relative;
+        &:before {
+            content: '';
+            width: 43px;
+            height: 1px;
+            top: 46.5px;
+            left: -43px;
+            position: absolute;
+            background-color: black;
+        }
+        &-wrapper {
+            display: flex;
+            gap: 16px;
+            padding-left: 15px;
+            padding-top: 45px;
+        }
+    }
+    &--header {
+        margin: 0;
+        font-size: 12px;
+        position: relative;
+        &:before {
+            @include before_circle;
+            left: -56px;
+            top: -14px;
+        }
+    }
+    &--column {
+        &-title {
+            position: relative;
+            padding-left: 35px;
+            &::before {
+                content: '';
+                width: 14px;
+                height: 14px;
+                left: -15px;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 100%;
+                position: absolute;
+                background-color: $main-color;
+            }
+        }
+    }
+
+    ul {
+        padding-left: 35px;
+        list-style: none;
+        li {
+            position: relative;
+            &:after {
+                content: '';
+                width: 1px;
+                height: calc(100% + 4px);
+                left: -43.6px;
+                top: -8px;
+                position: absolute;
+                background-color: black;
+            }
+        }
+    }
+}

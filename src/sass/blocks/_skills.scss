@@ -1,0 +1,43 @@
+.skills {
+    margin-top: 126px;
+    &--grid {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, minmax(270px, auto));
+        gap: 13px;
+    }
+    &--title {
+        position: relative;
+        &:before {
+            @include before_circle;
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+    &--subtitle {
+        margin: 20px 0 15px;
+    }
+    &--item {
+        padding: 30px;
+        border: 1px solid black;
+    }
+    &--icon {
+        max-width: 45px;
+        max-height: 65px;
+        &-medium {
+            max-width: 65px;
+        }
+        &-big {
+            max-width: 106px;
+        }
+        img {
+            justify-self: flex-start;
+        }
+    }
+    &--descr {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

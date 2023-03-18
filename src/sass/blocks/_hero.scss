@@ -1,5 +1,4 @@
 .hero {
-    // position: relative;
     height: 100vh;
     color: $text-color-alt;
     min-height: 100vh;
@@ -37,6 +36,7 @@
         }
     }
     &--title {
+        text-align: left;
         margin: 0.25em 0;
         padding-left: 0.12em;
         position: relative;
@@ -47,6 +47,9 @@
             height: 4rem;
             left: 0;
             top: -0.55rem;
+        }
+        &-small {
+            text-align: left;
         }
     }
 }

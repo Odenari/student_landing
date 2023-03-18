@@ -1,5 +1,5 @@
 .aboutme {
-    height: 720px;
+    max-height: 720px;
     font-size: 14px;
     line-height: 21px;
     margin-top: 6em;
@@ -21,10 +21,10 @@
         }
     }
     &--subtitle-big {
-        margin-top: 1em;
+        margin-top: 0.5em;
     }
     &--text {
-        min-height: 600px;
+        max-height: 600px;
     }
     &--descr {
         margin-top: 0.5em;
@@ -33,6 +33,7 @@
         &-big {
             font-size: 14px;
             line-height: 21px;
+            font-weight: 700;
         }
     }
     &--tech-wrapper {
@@ -48,8 +49,12 @@
     }
     &--icon {
         display: block;
+        height: 25px;
         width: 25px;
         margin: 1.25em 1.25em 0 0;
+    }
+    .divider {
+        margin: 0.8rem 0;
     }
 }
 .before-wrapper {
@@ -57,6 +62,6 @@
 }
 .before-wrapper::before {
     @include before_circle;
-    top: 20%;
-    left: -31%;
+    top: 0;
+    left: -30%;
 }

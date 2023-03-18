@@ -1,17 +1,29 @@
 .title {
-    line-height: 3rem;
+    font-weight: 700;
+    line-height: 2rem;
     letter-spacing: 0.08rem;
+    margin: 0 auto;
+    text-align: center;
+    &-fz14 {
+        font-size: 14px;
+        line-height: 14px;
+    }
     &-fz16 {
         font-size: 1rem;
         line-height: 1rem;
+    }
+    &-fz20 {
+        font-size: 20px;
+        line-height: 30px;
     }
     &-fz24 {
         font-size: 1.5rem;
         line-height: 1.5rem;
     }
-    &-fz32 {
+    &-fz36 {
         font-size: 2rem;
         line-height: 2rem;
+        margin-top: 1em;
     }
     &-fz48 {
         font-size: 3rem;
