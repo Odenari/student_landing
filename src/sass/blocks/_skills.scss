@@ -6,14 +6,9 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, minmax(270px, auto));
         gap: 13px;
-    }
-    &--title {
-        position: relative;
-        &:before {
-            @include before_circle;
-            top: -50%;
-            left: 50%;
-            transform: translate(-50%);
+        & > :nth-child(4) .skills--icon,
+        & > :last-child .skills--icon {
+            max-width: 145px;
         }
     }
     &--subtitle {
@@ -51,26 +46,33 @@
 }
 .line {
     &--head {
+        padding-left: 1rem;
         display: flex;
         justify-content: space-between;
+        position: relative;
+        &:before {
+            @include before_circle;
+            top: -10px;
+            left: 0px;
+        }
     }
     &--value {
         display: inline-block;
         font-size: 14px;
         font-weight: 500;
     }
-    &--bg {
+    &--progress {
+        margin-top: 20px;
         width: 350px;
         height: 14px;
         border-radius: 4px;
         background: #e8e4de;
         position: relative;
-    }
-    &--fill {
-        height: 14px;
-        background: $main-color;
-        border-radius: 4px;
-        position: relative;
-        top: -14px;
+        span {
+            display: block;
+            height: 14px;
+            background: $main-color;
+            border-radius: 4px;
+        }
     }
 }

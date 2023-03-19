@@ -14,11 +14,17 @@
 @import 'blocks/aboutme';
 @import 'blocks/experience';
 @import 'blocks/skills';
+@import 'blocks/portfolio';
+@import 'blocks/pricing';
+@import 'blocks/contacts';
 
 *,
+ul,
 h1,
 h2,
 h3,
+h5,
+h6,
 p,
 a,
 a::after,
