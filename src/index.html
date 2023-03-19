@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -63,8 +63,8 @@
 
                 </div>
                 <div class="hero--btns">
-                    <button class="btn hero--btn"><a href="#" class="hero--btnLink">Work gallery</a></button>
-                    <a href="#" class="hero--link">about me</a>
+                    <button class="btn hero--btn"><a href="#myworks">Work gallery</a></button>
+                    <a href="#about" class="hero--link">about me</a>
                 </div>
             </div>
         </div>
@@ -366,16 +366,16 @@
             </div>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="myworks">
             <div class="container">
                 <h3 class="title title-fz16 title--section-title">Potfolio</h3>
                 <h2 class="title title-fz36 portfolio--subtitle">My works</h2>
                 <div class="divider divider-center"></div>
                 <div class="portfolio--grid">
-                    <a href="#" class="portfolio--link">
+                    <a href="./projects/UberTestProject" target="_blank" class="portfolio--link">
                         <img src="./img/works/uber.jpg" alt="uber example" class="portfolio--img">
                     </a>
-                    <a href="#" class="portfolio--link">
+                    <a href="./projects/RunSmart" target="_blank" class="portfolio--link">
                         <img src="./img/works/pulse.jpg" alt="pulsemeters shop" class="portfolio--img">
                     </a>
                     <a href="#" class="portfolio--link">
@@ -439,32 +439,63 @@
 
         <section class="contacts">
             <div class="container">
-                <div class="contacts-grid">
-                    <img src="./img/main_photo.jpg" alt="my picture" class="aboutme--img">
-                    <div class="contacts--header">
-                        <h3 id="about" class="contacts--title title-fz16">Contacts</h3>
-                        <h2 class="contacts--subtitle-big title-fz36">Contact me</h2>
-                        <div class="divider"></div>
-                    </div>
+                <div class="contacts--grid">
+                    <img src="./img/main_photo.jpg" alt="my picture" class="contacts--photo">
                     <div class="contacts--content">
-                        <div class="contacts--subtitle">In any convenient way for you:</div>
-                        <div class="contacts--socilals">
-                            <a href="https://www.facebook.com/profile.php?id=100074051017916" class="contacts--link">
-                                <img src="./icons/menu/Facebook.svg" alt="Facebook" class="contacts--icon">
-                            </a>
-                            <a href="" class="contacts--link">
-                                <img src="./icons/menu/Telegram.svg" alt="Telegram" class="contacts--icon">
-                            </a>
-                            <a href="" class="contacts--link">
-                                <img src="./icons/menu/Instagram.svg" alt="Instagram" class="contacts--icon">
-                            </a>
+                        <div class="contacts--header">
+                            <h3 class="contacts--title title-fz16">Contacts</h3>
+                            <h2 class="contacts--subtitle-big title-fz36">Contact me</h2>
+                            <div class="divider contacts--divider"></div>
                         </div>
-                        <div class="contacts--form-title">
-                            Or leave your details and I will write to you myself:
+                        <div class="contacts--body">
+                            <div class="contacts--subtitle">In any convenient way for you:</div>
+                            <div class="contacts--socials">
+                                <a href="https://www.facebook.com/profile.php?id=100074051017916" target="_blank"
+                                    class="contacts--link">
+                                    <img src="./icons/menu/Facebook.svg" alt="Facebook" class="contacts--icon">
+                                </a>
+                                <a href="https://t.me/Odenari" target="_blank" class="contacts--link">
+                                    <img src="./icons/menu/Telegram.svg" alt="Telegram" class="contacts--icon">
+                                </a>
+                                <a href="https://www.instagram.com/ordinary_grey_one/" target="_blank"
+                                    class="contacts--link">
+                                    <img src="./icons/menu/Instagram.svg" alt="Instagram" class="contacts--icon">
+                                </a>
+                                <a href="https://discordapp.com/users/380778704915136514" target="_blank"
+                                    class="contacts--link">
+                                    <img src="./icons/menu/discord.svg" alt="Discord" class="contacts--icon">
+                                </a>
+                            </div>
+                            <div class="contacts--form-title">
+                                Or leave your details and I will write to you myself:
+                            </div>
+                            <form action="" class="contacts--form">
+                                <div class="contacts--input">
+                                    <input required type="text" id="name" name="name">
+                                    <label for="name">Your name</label>
+                                </div>
+                                <div class="contacts--input">
+                                    <input required type="email" id="email" name="email">
+                                    <label for="email">Your email</label>
+                                </div>
+                                <div class="contacts--text">
+                                    <textarea name="text-message" id="message"></textarea>
+                                    <label for="text-message">Your message</label>
+                                </div>
+                                <div class="contacts--triggers">
+                                    <button class="btn contacts--btn">Send message</button>
+                                    <div class="contacts--policy">
+                                        <input required type="checkbox">
+                                        <span>
+                                            I agree with the
+                                            <a href="./policy.html" target="_blank" class="contacts--policy-link">
+                                                terms of the privacy policy
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <form action="" class="contacts--form">
-
-                        </form>
                     </div>
                 </div>
             </div>
