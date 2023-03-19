@@ -9,6 +9,11 @@ close.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
+menu.addEventListener('click', (e) => {
+    const link = e.target;
+    link.closest('.menu').classList.remove('active');
+});
+
 const values = document.querySelectorAll('.line--value'),
     lines = document.querySelectorAll('.line--progress span');
 

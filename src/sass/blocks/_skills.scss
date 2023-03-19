@@ -9,6 +9,7 @@
         & > :nth-child(4) .skills--icon,
         & > :last-child .skills--icon {
             max-width: 145px;
+            object-fit: contain;
         }
     }
     &--subtitle {

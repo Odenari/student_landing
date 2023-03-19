@@ -1,14 +1,21 @@
 .socials {
-    padding-left: 0.5em;
-    width: 2rem;
-    height: 100%;
-    max-height: 18rem;
-    bottom: 2%;
-    display: flex;
+    width: 30px;
+    height: 100vh;
+    padding: 4px;
+    bottom: 0;
     position: fixed;
-    align-items: center;
+    display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    background-color: rgba(255, 175, 16, 0.55);
+    img {
+        transition: all 400ms ease-out;
+        &:hover {
+            transform: scale(1.25) rotate(90deg);
+        }
+    }
     &--label {
         color: $text-color-alt;
         writing-mode: vertical-lr;
