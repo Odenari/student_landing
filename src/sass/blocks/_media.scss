@@ -1,0 +1,60 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 992px;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+    .hero {
+        &--wrapper {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    aside.socials {
+        visibility: hidden;
+    }
+    .hero {
+        padding-top: 8em;
+        background: url('../img/mobile/blacg-bg.jpg') center/cover no-repeat;
+        &--title {
+            font-size: 2rem;
+            line-height: 2rem;
+            &:before {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+        &--wrapper {
+            padding-left: 1.45em;
+        }
+        &--descr {
+            width: 78%;
+        }
+        &--link {
+            opacity: 0.95;
+            color: $main-color;
+        }
+    }
+    .hamburger {
+        right: 20px;
+    }
+    .menu {
+        &--block {
+            width: 250px;
+            padding-left: 4em;
+        }
+    }
+}

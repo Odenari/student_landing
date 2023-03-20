@@ -1,8 +1,8 @@
 .hero {
     min-height: 100vh;
     color: $text-color-alt;
-    min-height: 100vh;
-    padding-top: 14rem;
+    padding-top: 12rem;
+    padding-bottom: 2rem;
     background: url('../img/main_bg.jpg') fixed center/cover no-repeat;
     &--wrapper {
         max-width: 770px;
