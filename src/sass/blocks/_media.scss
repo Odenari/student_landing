@@ -2,59 +2,142 @@
     .container {
         max-width: 992px;
     }
-}
-@media (max-width: 992px) {
-    .container {
-        max-width: 720px;
+    .hamburger {
+        right: auto;
+        left: 35px;
+        transform: rotate(180deg);
+    }
+    .aboutme {
+        font-weight: 500;
+        &--tech-wrapper {
+            gap: 1em;
+        }
+        &--techblock {
+            width: 100%;
+            font-size: 12px;
+        }
+    }
+    .experience {
+        &--textWrapper {
+            column-gap: 65px;
+            grid-template-columns: repeat(2 1fr);
+            padding: 0 10px;
+        }
+        &--column-title {
+            &::before {
+                width: 15px;
+                height: 15px;
+                left: -16px;
+            }
+        }
+    }
+    .socials {
+        right: 0;
     }
 }
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 920px;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         max-width: 560px;
     }
     .hero {
         &--wrapper {
-            width: 100%;
+            width: 70%;
+        }
+        &--title {
+            line-height: 1.2em;
+        }
+        &--link {
+            opacity: 1;
+        }
+    }
+    .aboutme {
+        padding-top: 4em;
+        &--wrapper {
+            display: block;
+        }
+        &--text {
+            margin-top: 1em;
+            padding: 0;
+            width: 80%;
+        }
+    }
+    .experience {
+        &--column + &--column {
+            margin-top: 25px;
+        }
+        font-weight: 500;
+        &--grid-wrapper {
+            margin-top: 40px;
+            column-gap: 35px;
+            grid-template-columns: 1fr;
+            padding: 0 10px;
+        }
+        &--descr {
+            font-size: 14px;
         }
     }
 }
+
 @media (max-width: 576px) {
     .container {
         width: 100%;
         padding: 0 10px;
     }
+    .hamburger {
+        left: auto;
+        right: 20px;
+        transform: none;
+    }
+    .menu {
+        &--block {
+            width: 250px;
+            padding-left: 4em;
+        }
+    }
     aside.socials {
-        visibility: hidden;
+        display: none;
     }
     .hero {
-        padding-top: 8em;
+        padding-top: 5em;
         background: url('../img/mobile/blacg-bg.jpg') center/cover no-repeat;
+        &--wrapper {
+            width: 95%;
+        }
         &--title {
             font-size: 2rem;
             line-height: 2rem;
             &:before {
                 width: 2.5rem;
                 height: 2.5rem;
+                left: 0;
+                top: -10px;
+            }
+            &-small {
+                font-size: 18px;
+                margin-top: 0.7em;
             }
         }
-        &--wrapper {
-            padding-left: 1.45em;
-        }
         &--descr {
-            width: 78%;
-        }
-        &--link {
-            opacity: 0.95;
-            color: $main-color;
+            width: 80%;
         }
     }
-    .hamburger {
-        right: 20px;
+    .aboutme {
+        &--tech-wrapper {
+            margin: 0 auto;
+            padding-top: 1.6rem;
+        }
     }
-    .menu {
-        &--block {
-            width: 250px;
-            padding-left: 4em;
+    .experience {
+        &--icon-tablet {
+            width: 35px;
+            height: 35px;
         }
     }
 }

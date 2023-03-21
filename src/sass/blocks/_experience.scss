@@ -3,9 +3,8 @@
     &--column-title {
         text-align: left;
     }
-    &--header {
+    &--before-circle {
         margin: 0;
-        font-size: 12px;
         position: relative;
         text-align: left;
         &:before {
@@ -23,11 +22,11 @@
         width: 25px;
         height: 25px;
     }
-    &--textWrapper {
+    &--grid-wrapper {
         padding: 0 65px;
         margin-top: 60px;
         display: grid;
-        grid-template-columns: repeat(2, 425px);
+        grid-template-columns: repeat(2, minmax(320px, 425px));
         column-gap: 135px;
     }
     &--item {
@@ -41,8 +40,7 @@
             position: absolute;
             background-color: black;
         }
-        &-wrapper {
-            max-height: fit-content;
+        &-header {
             display: flex;
             gap: 16px;
             padding-left: 15px;
@@ -51,6 +49,7 @@
     }
 
     &--column {
+        width: 100%;
         &-title {
             position: relative;
             padding-left: 35px;
