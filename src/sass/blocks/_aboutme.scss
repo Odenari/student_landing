@@ -1,13 +1,20 @@
 .aboutme {
-    max-height: 720px;
     font-size: 14px;
     line-height: 21px;
     padding-top: 6em;
+    &--wrapper {
+        @include flex;
+        gap: 1rem;
+        justify-content: space-between;
+    }
     &--img {
         display: block;
         max-height: 600px;
         max-width: 400px;
-        margin-right: 4.125em;
+    }
+    &--text {
+        width: 100%;
+        padding: 0 1em;
     }
     &--title {
         margin-top: 7px;
@@ -23,20 +30,21 @@
     &--subtitle-big {
         margin-top: 0.5em;
     }
-    &--text {
-        max-height: 600px;
-    }
+
     &--descr {
         margin-top: 0.5em;
-        font-size: 12px;
+        font-size: 13px;
         line-height: 18px;
     }
     &--tech-wrapper {
-        margin-top: 2.5em;
+        @include flex;
+        flex-flow: row wrap;
+        margin-top: 2em;
         padding-left: 1em;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        gap: 2rem;
+        gap: 1rem;
+    }
+    &--tech {
+        @include flex;
     }
     &--techblock {
         width: 200px;

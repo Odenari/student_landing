@@ -17,7 +17,7 @@
     &--block {
         position: relative;
         z-index: 10;
-        min-width: 350px;
+        width: 350px;
         padding-top: 12em;
         padding-left: 5em;
         background-color: $main-color;
@@ -59,7 +59,8 @@
         display: flex;
         gap: 1rem;
         position: absolute;
-        bottom: 50px;
+        bottom: 0;
+        margin: 10px 0 15px;
     }
     &--icon {
         width: 20px;
