@@ -1,11 +1,11 @@
 .btn {
     display: block;
-    max-width: 145px;
+    max-width: 180px;
     height: 45px;
-    padding: 0.255em 1em;
+    padding: 0.5em 0.8em;
     font-weight: 700;
     font-size: 0.87rem;
-    line-height: 0.87rem;
+    line-height: 2rem;
     text-align: center;
     cursor: pointer;
     border: none;
@@ -15,7 +15,9 @@
     background-color: $main-color;
     transition: all 150ms ease-in-out;
     &:hover {
-        transform: scale(1.025);
+        color: $text-color-main;
+        transform: scale(1.125);
+        padding: 0.6em 1.2em;
         letter-spacing: 0.03rem;
         box-shadow: 4px -4px 0 rgba(255, 255, 255, 0.25);
     }

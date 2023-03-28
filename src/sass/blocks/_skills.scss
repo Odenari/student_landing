@@ -8,7 +8,7 @@
         gap: 13px;
         & > :nth-child(4) .skills--icon,
         & > :last-child .skills--icon {
-            max-width: 145px;
+            width: 145px;
             object-fit: contain;
         }
     }
@@ -17,25 +17,29 @@
     }
     &--item {
         padding: 30px;
-        border: 1px solid black;
+        // border: 1px solid black;
     }
     &--icon {
-        max-width: 45px;
-        max-height: 65px;
+        width: 45px;
+        height: 65px;
         &-medium {
-            max-width: 65px;
+            width: 65px;
         }
         &-big {
-            max-width: 106px;
+            width: 106px;
         }
         img {
             justify-self: flex-start;
+        }
+        &-special {
+            width: 120px;
         }
     }
     &--descr {
         font-size: 12px;
         line-height: 18px;
         font-weight: 500;
+        margin-top: 20px;
     }
     &--line {
         margin-top: 100px;

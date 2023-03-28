@@ -11,7 +11,7 @@
     background-color: rgba(255, 175, 16, 0.75);
     img {
         width: 25px;
-        transition: all 400ms ease-out;
+        transition: all 200ms ease-out;
         &:hover {
             transform: scale(1.25) rotate(90deg);
         }
