@@ -1,9 +1,10 @@
 .pricing {
     margin-top: 60px;
+    // padding-left: 30px;
     &--grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        justify-content: flex-end;
+        justify-items: center;
         gap: 10%;
     }
     &--list {
