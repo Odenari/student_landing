@@ -1,0 +1,208 @@
+* {
+  font-family: "Roboto", "Verdana", serif;
+}
+
+.text_end {
+  text-align: right;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+header {
+  position: relative;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  height: 50px;
+  background: #212121;
+}
+
+header nav .menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style: none;
+}
+
+.menu .menu_link {
+  font-weight: 300;
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration-line: none;
+}
+.menu_link:hover {
+  text-decoration: underline;
+}
+.menu .menu_item {
+  border-right: 2px dashed black;
+  padding-right: 42px;
+}
+.menu :last-child {
+  border-right: none;
+}
+
+.subheader {
+  position: absolute;
+  transform: translateY(50px);
+  width: 100vw;
+  height: 88px;
+  padding: 0 97px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.subheader .subheader_logo {
+  display: block;
+  margin-top: 17px;
+  min-width: 100%;
+}
+
+.subheader .subheader_logo_descr {
+  margin-top: 4px;
+  font-weight: 100;
+  font-size: 13px;
+  align-items: center;
+  opacity: 0.5;
+  color: #ffffff;
+}
+
+.subheader .subheader_call {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.subheader .subheader_phonenumber {
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.subheader .subheader_btn {
+  width: 172px;
+  height: 46px;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e6e6e6;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  background: linear-gradient(0deg, #118197 0%, #2dbbd7 100%);
+  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+}
+.promo {
+  padding: 150px 0 185px 0;
+  min-height: 800px;
+  background: url(../img/bg/main_bg.jpg) center center/cover no-repeat;
+}
+.promo .promo_header {
+  font-weight: 900;
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.promo .promo_subheader {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.promo .promo_descr {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.promo .promo_btn {
+  width: 259px;
+  height: 63px;
+  display: block;
+  margin: 116px auto 0 auto;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e6e6e6;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  background: linear-gradient(0deg, #118197 0%, #2dbbd7 100%);
+  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+}
+
+.advantages {
+  min-height: 864px;
+  padding-top: 20px;
+}
+
+.advantages .advanatages_title {
+  width: 134px;
+  height: 24px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #212121;
+}
+
+.advantages .advantages_header {
+  margin-top: 33px;
+  font-weight: 700;
+  font-size: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.advantages .advantages_reasons {
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+  height: 150px;
+  margin-top: 25px;
+}
+
+.advantages .advantages_circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 116px;
+  height: 116px;
+  background: #1eacc7;
+  border-radius: 100%;
+}
+
+.advantages .advantages_descr {
+  padding: 0 15px;
+  margin-left: 25px;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 21px;
+}
+.advantages .advantages_descr_blue {
+  font-weight: 400;
+  color: #1eacc7;
+}
